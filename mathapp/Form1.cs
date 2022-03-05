@@ -222,10 +222,12 @@ namespace mathapp
                 if (addAnsPos == 1)
                 {
                     practice_input1_status.Text = "✅";
+                    practice_input1_status.ForeColor = System.Drawing.Color.Green;
                 }
                 else if (addAnsPos == 2 || addAnsPos == 0)
                 {
                     practice_input1_status.Text = "❌";
+                    practice_input1_status.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else if (practice_input1.Text == Math.Round(quad.subtractResult, 3).ToString())
@@ -233,15 +235,18 @@ namespace mathapp
                 if (addAnsPos == 1 || addAnsPos == 0)
                 {
                     practice_input1_status.Text = "❌";
+                    practice_input1_status.ForeColor = System.Drawing.Color.Red;
                 }
                 else if (addAnsPos == 2)
                 {
                     practice_input1_status.Text = "✅";
+                    practice_input1_status.ForeColor = System.Drawing.Color.Green;
                 }
             }
             else 
             {
                 practice_input1_status.Text = "❌";
+                practice_input1_status.ForeColor = System.Drawing.Color.Red;
             }
 
             if (practice_input2.Text == Math.Round(quad.addResult, 3).ToString())
@@ -249,10 +254,12 @@ namespace mathapp
                 if (addAnsPos == 1)
                 {
                     practice_input2_status.Text = "❌";
+                    practice_input2_status.ForeColor = System.Drawing.Color.Red;
                 }
                 else if (addAnsPos == 2 || addAnsPos == 0)
                 {
                     practice_input2_status.Text = "✅";
+                    practice_input2_status.ForeColor = System.Drawing.Color.Green;
                 }
             }
             else if (practice_input2.Text == Math.Round(quad.subtractResult, 3).ToString())
@@ -260,15 +267,18 @@ namespace mathapp
                 if (addAnsPos == 1 || addAnsPos == 0)
                 {
                     practice_input2_status.Text = "✅";
+                    practice_input2_status.ForeColor = System.Drawing.Color.Green;
                 }
                 else if (addAnsPos == 2)
                 {
                     practice_input2_status.Text = "❌";
+                    practice_input2_status.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
             {
                 practice_input2_status.Text = "❌";
+                practice_input2_status.ForeColor = System.Drawing.Color.Red;
             }
         }
 

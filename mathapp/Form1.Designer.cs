@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.solve_header = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.solve_output_2 = new System.Windows.Forms.Label();
             this.solve_instructions = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.solve_input_c = new System.Windows.Forms.TextBox();
@@ -39,6 +43,8 @@
             this.solve_output_1 = new System.Windows.Forms.Label();
             this.solve_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.practice_correctans_2 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.practice_input2_status = new System.Windows.Forms.Label();
             this.practice_input1_status = new System.Windows.Forms.Label();
@@ -54,12 +60,6 @@
             this.practice_input1 = new System.Windows.Forms.TextBox();
             this.practice_eqdisplay = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.solve_output_2 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.solve_header = new System.Windows.Forms.Label();
-            this.practice_correctans_2 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -118,6 +118,46 @@
             this.splitContainer1.SplitterDistance = 540;
             this.splitContainer1.TabIndex = 0;
             // 
+            // solve_header
+            // 
+            this.solve_header.AutoSize = true;
+            this.solve_header.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.solve_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.solve_header.Location = new System.Drawing.Point(23, 228);
+            this.solve_header.Name = "solve_header";
+            this.solve_header.Size = new System.Drawing.Size(336, 41);
+            this.solve_header.TabIndex = 0;
+            this.solve_header.Text = "Equation will be here";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label11.Location = new System.Drawing.Point(25, 364);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 25);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Answer 2:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label13.Location = new System.Drawing.Point(25, 302);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(100, 25);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Answer 1:";
+            // 
+            // solve_output_2
+            // 
+            this.solve_output_2.AutoSize = true;
+            this.solve_output_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.solve_output_2.Location = new System.Drawing.Point(132, 364);
+            this.solve_output_2.Name = "solve_output_2";
+            this.solve_output_2.Size = new System.Drawing.Size(0, 25);
+            this.solve_output_2.TabIndex = 0;
+            // 
             // solve_instructions
             // 
             this.solve_instructions.AutoSize = true;
@@ -125,7 +165,7 @@
             this.solve_instructions.Location = new System.Drawing.Point(201, 24);
             this.solve_instructions.Name = "solve_instructions";
             this.solve_instructions.Size = new System.Drawing.Size(215, 25);
-            this.solve_instructions.TabIndex = 10;
+            this.solve_instructions.TabIndex = 0;
             this.solve_instructions.Text = "Enter a, b, and c values";
             // 
             // label7
@@ -135,7 +175,7 @@
             this.label7.Location = new System.Drawing.Point(27, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 17);
-            this.label7.TabIndex = 9;
+            this.label7.TabIndex = 0;
             this.label7.Text = "c:";
             // 
             // solve_input_c
@@ -143,7 +183,7 @@
             this.solve_input_c.Location = new System.Drawing.Point(53, 175);
             this.solve_input_c.Name = "solve_input_c";
             this.solve_input_c.Size = new System.Drawing.Size(100, 22);
-            this.solve_input_c.TabIndex = 8;
+            this.solve_input_c.TabIndex = 3;
             this.solve_input_c.TextChanged += new System.EventHandler(this.practice_input_TextChanged);
             // 
             // label6
@@ -153,7 +193,7 @@
             this.label6.Location = new System.Drawing.Point(27, 128);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(20, 17);
-            this.label6.TabIndex = 7;
+            this.label6.TabIndex = 0;
             this.label6.Text = "b:";
             // 
             // solve_input_b
@@ -161,7 +201,7 @@
             this.solve_input_b.Location = new System.Drawing.Point(53, 128);
             this.solve_input_b.Name = "solve_input_b";
             this.solve_input_b.Size = new System.Drawing.Size(100, 22);
-            this.solve_input_b.TabIndex = 6;
+            this.solve_input_b.TabIndex = 2;
             this.solve_input_b.TextChanged += new System.EventHandler(this.practice_input_TextChanged);
             // 
             // label5
@@ -171,7 +211,7 @@
             this.label5.Location = new System.Drawing.Point(27, 77);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(20, 17);
-            this.label5.TabIndex = 5;
+            this.label5.TabIndex = 0;
             this.label5.Text = "a:";
             // 
             // solve_input_a
@@ -179,7 +219,7 @@
             this.solve_input_a.Location = new System.Drawing.Point(53, 77);
             this.solve_input_a.Name = "solve_input_a";
             this.solve_input_a.Size = new System.Drawing.Size(100, 22);
-            this.solve_input_a.TabIndex = 4;
+            this.solve_input_a.TabIndex = 1;
             this.solve_input_a.TextChanged += new System.EventHandler(this.practice_input_TextChanged);
             // 
             // solve_output_1
@@ -189,7 +229,7 @@
             this.solve_output_1.Location = new System.Drawing.Point(132, 302);
             this.solve_output_1.Name = "solve_output_1";
             this.solve_output_1.Size = new System.Drawing.Size(0, 25);
-            this.solve_output_1.TabIndex = 3;
+            this.solve_output_1.TabIndex = 0;
             // 
             // solve_btn
             // 
@@ -197,7 +237,7 @@
             this.solve_btn.Location = new System.Drawing.Point(205, 121);
             this.solve_btn.Name = "solve_btn";
             this.solve_btn.Size = new System.Drawing.Size(105, 37);
-            this.solve_btn.TabIndex = 2;
+            this.solve_btn.TabIndex = 4;
             this.solve_btn.Text = "Solve";
             this.solve_btn.UseVisualStyleBackColor = true;
             this.solve_btn.Click += new System.EventHandler(this.solve_btn_Click);
@@ -212,14 +252,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Quadratic Equation:";
             // 
+            // practice_correctans_2
+            // 
+            this.practice_correctans_2.AutoSize = true;
+            this.practice_correctans_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.practice_correctans_2.Location = new System.Drawing.Point(186, 486);
+            this.practice_correctans_2.Name = "practice_correctans_2";
+            this.practice_correctans_2.Size = new System.Drawing.Size(40, 22);
+            this.practice_correctans_2.TabIndex = 0;
+            this.practice_correctans_2.Text = "N/A";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label14.Location = new System.Drawing.Point(27, 485);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(154, 22);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Correct Answer 2:";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label12.Location = new System.Drawing.Point(28, 50);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(28, 244);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(487, 17);
-            this.label12.TabIndex = 17;
+            this.label12.Size = new System.Drawing.Size(532, 16);
+            this.label12.TabIndex = 0;
             this.label12.Text = "Convert Fractions to decimals. Round ALL decimals to the 3rd decimal place";
             // 
             // practice_input2_status
@@ -229,7 +289,7 @@
             this.practice_input2_status.Location = new System.Drawing.Point(272, 309);
             this.practice_input2_status.Name = "practice_input2_status";
             this.practice_input2_status.Size = new System.Drawing.Size(22, 15);
-            this.practice_input2_status.TabIndex = 16;
+            this.practice_input2_status.TabIndex = 0;
             this.practice_input2_status.Text = "❌";
             // 
             // practice_input1_status
@@ -239,7 +299,7 @@
             this.practice_input1_status.Location = new System.Drawing.Point(272, 277);
             this.practice_input1_status.Name = "practice_input1_status";
             this.practice_input1_status.Size = new System.Drawing.Size(22, 15);
-            this.practice_input1_status.TabIndex = 15;
+            this.practice_input1_status.TabIndex = 0;
             this.practice_input1_status.Text = "❌";
             // 
             // label9
@@ -249,7 +309,7 @@
             this.label9.Location = new System.Drawing.Point(29, 306);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 18);
-            this.label9.TabIndex = 14;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Ans 2:";
             // 
             // label8
@@ -259,7 +319,7 @@
             this.label8.Location = new System.Drawing.Point(29, 274);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 18);
-            this.label8.TabIndex = 13;
+            this.label8.TabIndex = 0;
             this.label8.Text = "Ans 1:";
             // 
             // practice_input2
@@ -269,7 +329,7 @@
             this.practice_input2.Name = "practice_input2";
             this.practice_input2.ReadOnly = true;
             this.practice_input2.Size = new System.Drawing.Size(189, 23);
-            this.practice_input2.TabIndex = 12;
+            this.practice_input2.TabIndex = 7;
             this.practice_input2.Text = "Answer 2";
             // 
             // practice_inputsubmit
@@ -279,7 +339,7 @@
             this.practice_inputsubmit.Location = new System.Drawing.Point(131, 340);
             this.practice_inputsubmit.Name = "practice_inputsubmit";
             this.practice_inputsubmit.Size = new System.Drawing.Size(98, 32);
-            this.practice_inputsubmit.TabIndex = 11;
+            this.practice_inputsubmit.TabIndex = 8;
             this.practice_inputsubmit.Text = "Submit All";
             this.practice_inputsubmit.UseVisualStyleBackColor = true;
             this.practice_inputsubmit.Click += new System.EventHandler(this.practice_inputsubmit_Click);
@@ -294,7 +354,7 @@
             this.practice_gen.Location = new System.Drawing.Point(32, 78);
             this.practice_gen.Name = "practice_gen";
             this.practice_gen.Size = new System.Drawing.Size(197, 33);
-            this.practice_gen.TabIndex = 10;
+            this.practice_gen.TabIndex = 5;
             this.practice_gen.Text = "Generate Problem";
             this.practice_gen.UseVisualStyleBackColor = false;
             this.practice_gen.Click += new System.EventHandler(this.practice_gen_Click);
@@ -306,7 +366,7 @@
             this.practice_correctans_1.Location = new System.Drawing.Point(185, 448);
             this.practice_correctans_1.Name = "practice_correctans_1";
             this.practice_correctans_1.Size = new System.Drawing.Size(40, 22);
-            this.practice_correctans_1.TabIndex = 9;
+            this.practice_correctans_1.TabIndex = 0;
             this.practice_correctans_1.Text = "N/A";
             // 
             // label4
@@ -316,7 +376,7 @@
             this.label4.Location = new System.Drawing.Point(27, 447);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 22);
-            this.label4.TabIndex = 8;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Correct Answer 1:";
             // 
             // practice_status
@@ -326,7 +386,7 @@
             this.practice_status.Location = new System.Drawing.Point(184, 408);
             this.practice_status.Name = "practice_status";
             this.practice_status.Size = new System.Drawing.Size(40, 22);
-            this.practice_status.TabIndex = 7;
+            this.practice_status.TabIndex = 0;
             this.practice_status.Text = "N/A";
             // 
             // label3
@@ -336,7 +396,7 @@
             this.label3.Location = new System.Drawing.Point(28, 408);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 22);
-            this.label3.TabIndex = 6;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Status:";
             // 
             // practice_input1
@@ -346,17 +406,18 @@
             this.practice_input1.Name = "practice_input1";
             this.practice_input1.ReadOnly = true;
             this.practice_input1.Size = new System.Drawing.Size(189, 23);
-            this.practice_input1.TabIndex = 5;
+            this.practice_input1.TabIndex = 6;
             this.practice_input1.Text = "Answer 1";
             // 
             // practice_eqdisplay
             // 
             this.practice_eqdisplay.AutoSize = true;
+            this.practice_eqdisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.practice_eqdisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.practice_eqdisplay.Location = new System.Drawing.Point(24, 156);
             this.practice_eqdisplay.Name = "practice_eqdisplay";
-            this.practice_eqdisplay.Size = new System.Drawing.Size(334, 39);
-            this.practice_eqdisplay.TabIndex = 4;
+            this.practice_eqdisplay.Size = new System.Drawing.Size(336, 41);
+            this.practice_eqdisplay.TabIndex = 0;
             this.practice_eqdisplay.Text = "Equation will be here";
             // 
             // label2
@@ -368,65 +429,6 @@
             this.label2.Size = new System.Drawing.Size(88, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Practice:";
-            // 
-            // solve_output_2
-            // 
-            this.solve_output_2.AutoSize = true;
-            this.solve_output_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.solve_output_2.Location = new System.Drawing.Point(132, 364);
-            this.solve_output_2.Name = "solve_output_2";
-            this.solve_output_2.Size = new System.Drawing.Size(0, 25);
-            this.solve_output_2.TabIndex = 11;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label11.Location = new System.Drawing.Point(25, 364);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 25);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "Answer 2:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label13.Location = new System.Drawing.Point(25, 302);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 25);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Answer 1:";
-            // 
-            // solve_header
-            // 
-            this.solve_header.AutoSize = true;
-            this.solve_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.solve_header.Location = new System.Drawing.Point(23, 228);
-            this.solve_header.Name = "solve_header";
-            this.solve_header.Size = new System.Drawing.Size(334, 39);
-            this.solve_header.TabIndex = 14;
-            this.solve_header.Text = "Equation will be here";
-            // 
-            // practice_correctans_2
-            // 
-            this.practice_correctans_2.AutoSize = true;
-            this.practice_correctans_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.practice_correctans_2.Location = new System.Drawing.Point(186, 486);
-            this.practice_correctans_2.Name = "practice_correctans_2";
-            this.practice_correctans_2.Size = new System.Drawing.Size(40, 22);
-            this.practice_correctans_2.TabIndex = 19;
-            this.practice_correctans_2.Text = "N/A";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label14.Location = new System.Drawing.Point(27, 485);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(154, 22);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Correct Answer 2:";
             // 
             // app
             // 
