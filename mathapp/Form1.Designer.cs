@@ -117,6 +117,7 @@
             this.splitContainer1.Size = new System.Drawing.Size(1120, 687);
             this.splitContainer1.SplitterDistance = 540;
             this.splitContainer1.TabIndex = 0;
+            this.splitContainer1.TabStop = false;
             // 
             // solve_header
             // 
