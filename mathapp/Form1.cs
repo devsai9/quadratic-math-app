@@ -175,16 +175,21 @@ namespace mathapp
             practice_input2.Text = "";
             practice_inputsubmit.Enabled = true;
 
-            practice_correctans_1.Text = "N/A";
-            practice_correctans_1.BackColor = System.Drawing.Color.Transparent;
-            practice_correctans_1.ForeColor = System.Drawing.Color.Black;
             practice_status.Text = "Unchecked";
             practice_status.ForeColor = System.Drawing.Color.Red;
 
-            practice_input1_status.Text = "❌";
-            practice_input2_status.Text = "❌";
+            practice_correctans_1.Text = "N/A";
+            practice_correctans_1.BackColor = System.Drawing.Color.Transparent;
+            practice_correctans_1.ForeColor = System.Drawing.Color.Black;
 
+            practice_correctans_2.Text = "N/A";
+            practice_correctans_2.BackColor = System.Drawing.Color.Transparent;
+            practice_correctans_2.ForeColor = System.Drawing.Color.Black;
+
+            practice_input1_status.Text = "❌";
             practice_input1_status.Visible = false;
+
+            practice_input2_status.Text = "❌";
             practice_input2_status.Visible = false;
         }
 
