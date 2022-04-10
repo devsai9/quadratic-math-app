@@ -13,74 +13,6 @@ namespace mathapp
             InitializeComponent();
         }
 
-        private void practice_input_TextChanged(object sender, EventArgs e) 
-        {
-            var a = solve_input_a.Text;
-            var b = solve_input_b.Text;
-            var c = solve_input_c.Text;
-            var headerRegex = new Regex(@"[-]");
-            if (!headerRegex.IsMatch(b))
-            {
-                b = "+ " + b;
-            }
-            else if (headerRegex.IsMatch(b)) 
-            {
-                var bTrim = b.Trim(new[] {'-'});
-                b = "- " + bTrim;
-            }
-
-            if (!headerRegex.IsMatch(c)) 
-            {
-                c = "+ " + c;
-            }
-            else if (headerRegex.IsMatch(c))
-            {
-                var cTrim = c.Trim(new[] { '-' });
-                c = "- " + cTrim;
-            }
-
-            if (string.IsNullOrWhiteSpace(solve_input_a.Text) && string.IsNullOrWhiteSpace(solve_input_b.Text) && string.IsNullOrWhiteSpace(solve_input_c.Text))
-            {
-                solve_header.Text = "Enter a, b, and c values";
-            }
-            else if (string.IsNullOrWhiteSpace(solve_input_a.Text)) 
-            {
-                solve_header.Text = "?x² " + b + "x " + c;
-                if (string.IsNullOrWhiteSpace(solve_input_b.Text) && !string.IsNullOrWhiteSpace(solve_input_c.Text))
-                {
-                    solve_header.Text = "?x² " + "+ " + "?x " + c;
-                }
-
-                if (string.IsNullOrWhiteSpace(solve_input_c.Text)) 
-                {
-                    solve_header.Text = "?x² " + b + "x " + "+ " + "?";
-                }
-            } 
-            else if (string.IsNullOrWhiteSpace(solve_input_b.Text)) 
-            {
-                solve_header.Text = a + "x² " + "+ " + "?x " + c;
-
-                if (string.IsNullOrWhiteSpace(solve_input_a.Text))
-                {
-                    solve_header.Text = "?x² " + "+ " + "?x " + c;
-                }
-
-                if (string.IsNullOrWhiteSpace(solve_input_c.Text))
-                {
-                    solve_header.Text = "?x² " + b + "x " + "+ " + "?";
-
-                    if (string.IsNullOrWhiteSpace(solve_input_b.Text))
-                    {
-                        solve_header.Text = a + "x² " + "+ " + "?x " + "+ " + "?";
-                    }
-                }
-            }
-            else
-            {
-                solve_header.Text = a + "x² " + b + "x " + c;
-            }
-        }
-
         private void solve_btn_Click(object sender, EventArgs e)
         {
             var input_a = solve_input_a.Text;
@@ -175,7 +107,7 @@ namespace mathapp
             practice_input2.Text = "";
             practice_inputsubmit.Enabled = true;
 
-            practice_status.Text = "Unchecked";
+            practice_status.Text = "Unverified";
             practice_status.ForeColor = System.Drawing.Color.Red;
 
             practice_correctans_1.Text = "N/A";
@@ -224,7 +156,7 @@ namespace mathapp
                 practice_correctans_2.ForeColor = System.Drawing.Color.White;
             }
 
-            practice_status.Text = "Checked";
+            practice_status.Text = "Verified";
             practice_status.ForeColor = System.Drawing.Color.Green;
 
             if (practice_input1.Text == Math.Round(quad.addResult, 3).ToString())
@@ -337,6 +269,16 @@ namespace mathapp
             }
         }
 
+        private void solve_input_TextChanged(object sender, KeyEventArgs e)
+        {
+            liveTextChange();
+        }
+
+        //private void solve_input_TextChanged(object sender, KeyPressEventArgs e)
+        //{
+        //    liveTextChange();
+        //}
+
         private Quadratic quadratic(int a, int b, int c)
         {
             //var quadsqrtpart = Math.Pow(b, 2) - 4 * a * c;
@@ -362,6 +304,16 @@ namespace mathapp
             return quadratic;
         }
 
+        private void solve_input_TextChanged(object sender, EventArgs e)
+        {
+            liveTextChange();
+        }
+
+        private void solve_input_c_Click(object sender, EventArgs e)
+        {
+            liveTextChange();
+        }
+
         //private double addQuadratic(int a, int b, int c)
         //{
         //    var result = (-b + System.Math.Sqrt(b ^ 2 - 4 * a * c)) / (2 * a);
@@ -380,6 +332,74 @@ namespace mathapp
             //int num = rnd.Next(min, max);
 
             return rnd.Next(min, max);
+        }
+
+        private void liveTextChange()
+        {
+            var a = solve_input_a.Text;
+            var b = solve_input_b.Text;
+            var c = solve_input_c.Text;
+            var headerRegex = new Regex(@"[-]");
+            if (!headerRegex.IsMatch(b))
+            {
+                b = "+ " + b;
+            }
+            else if (headerRegex.IsMatch(b))
+            {
+                var bTrim = b.Trim(new[] { '-' });
+                b = "- " + bTrim;
+            }
+
+            if (!headerRegex.IsMatch(c))
+            {
+                c = "+ " + c;
+            }
+            else if (headerRegex.IsMatch(c))
+            {
+                var cTrim = c.Trim(new[] { '-' });
+                c = "- " + cTrim;
+            }
+
+            if (string.IsNullOrWhiteSpace(solve_input_a.Text) && string.IsNullOrWhiteSpace(solve_input_b.Text) && string.IsNullOrWhiteSpace(solve_input_c.Text))
+            {
+                solve_header.Text = "Enter a, b, and c values";
+            }
+            else if (string.IsNullOrWhiteSpace(solve_input_a.Text))
+            {
+                solve_header.Text = "?x² " + b + "x " + c;
+                if (string.IsNullOrWhiteSpace(solve_input_b.Text) && !string.IsNullOrWhiteSpace(solve_input_c.Text))
+                {
+                    solve_header.Text = "?x² " + "+ " + "?x " + c;
+                }
+
+                if (string.IsNullOrWhiteSpace(solve_input_c.Text))
+                {
+                    solve_header.Text = "?x² " + b + "x " + "+ " + "?";
+                }
+            }
+            else if (string.IsNullOrWhiteSpace(solve_input_b.Text))
+            {
+                solve_header.Text = a + "x² " + "+ " + "?x " + c;
+
+                if (string.IsNullOrWhiteSpace(solve_input_a.Text))
+                {
+                    solve_header.Text = "?x² " + "+ " + "?x " + c;
+                }
+
+                if (string.IsNullOrWhiteSpace(solve_input_c.Text))
+                {
+                    solve_header.Text = "?x² " + b + "x " + "+ " + "?";
+
+                    if (string.IsNullOrWhiteSpace(solve_input_b.Text))
+                    {
+                        solve_header.Text = a + "x² " + "+ " + "?x " + "+ " + "?";
+                    }
+                }
+            }
+            else
+            {
+                solve_header.Text = a + "x² " + b + "x " + c;
+            }
         }
     }
 }
