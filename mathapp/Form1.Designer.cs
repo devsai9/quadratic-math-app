@@ -60,6 +60,7 @@
             this.practice_input1 = new System.Windows.Forms.TextBox();
             this.practice_eqdisplay = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -97,6 +98,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.splitContainer1.Panel2.Controls.Add(this.label10);
             this.splitContainer1.Panel2.Controls.Add(this.practice_correctans_2);
             this.splitContainer1.Panel2.Controls.Add(this.label14);
             this.splitContainer1.Panel2.Controls.Add(this.label12);
@@ -280,7 +282,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(28, 244);
+            this.label12.Location = new System.Drawing.Point(28, 225);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(470, 18);
             this.label12.TabIndex = 0;
@@ -295,6 +297,7 @@
             this.practice_input2_status.Size = new System.Drawing.Size(19, 14);
             this.practice_input2_status.TabIndex = 0;
             this.practice_input2_status.Text = "❌";
+            this.practice_input2_status.Visible = false;
             // 
             // practice_input1_status
             // 
@@ -305,6 +308,7 @@
             this.practice_input1_status.Size = new System.Drawing.Size(19, 14);
             this.practice_input1_status.TabIndex = 0;
             this.practice_input1_status.Text = "❌";
+            this.practice_input1_status.Visible = false;
             // 
             // label9
             // 
@@ -434,6 +438,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Practice:";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(29, 245);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(322, 18);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "If there are no solutions, enter \"ns\" (all lowercase)";
+            // 
             // app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,6 +500,7 @@
         private System.Windows.Forms.Label solve_header;
         private System.Windows.Forms.Label practice_correctans_2;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label10;
     }
 }
 

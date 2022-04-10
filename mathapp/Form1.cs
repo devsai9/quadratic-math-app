@@ -97,11 +97,13 @@ namespace mathapp
             if (solveRegex.IsMatch(input_a) || solveRegex.IsMatch(input_b) || solveRegex.IsMatch(input_c))
             {
                 solve_output_1.Text = "Error";
+                solve_output_2.Text = "Error";
                 //return;
             }
-            else if (string.IsNullOrEmpty(input_a) || string.IsNullOrEmpty(input_b) || string.IsNullOrEmpty(input_c)) 
+            else if (string.IsNullOrEmpty(input_a) || string.IsNullOrEmpty(input_b) || string.IsNullOrEmpty(input_c))
             {
                 solve_output_1.Text = "Error";
+                solve_output_2.Text = "Error";
                 //return;
             }
             else if (double.Parse(input_a) != double.NaN && double.Parse(input_b) != double.NaN && double.Parse(input_c) != double.NaN)
@@ -109,6 +111,11 @@ namespace mathapp
                 var quad = quadratic(int.Parse(input_a), int.Parse(input_b), int.Parse(input_c));
                 solve_output_1.Text = quad.addResult.ToString();
                 solve_output_2.Text = quad.subtractResult.ToString();
+                if (quad.addResult.ToString() == "NaN" && quad.subtractResult.ToString() == "NaN") 
+                {
+                    solve_output_1.Text = "No solutions (ns)";
+                    solve_output_2.Text = "No solutions (ns)";
+                }
             }
 
 
@@ -155,7 +162,7 @@ namespace mathapp
             if (secondNumber == 0) {
                 secondNumber = generateRandomNumber(15, 25);
             }
-            thirdNumber = generateRandomNumber(0, 10);
+            thirdNumber = generateRandomNumber(-10, 2);
             //int firstOperator = generateRandomNumber(0, 1);
             //int secondOperator = generateRandomNumber(1, 2);
 
@@ -200,6 +207,17 @@ namespace mathapp
             practice_correctans_2.Text = Math.Round(quad.subtractResult, 3).ToString();
             practice_correctans_2.BackColor = System.Drawing.Color.Black;
             practice_correctans_2.ForeColor = System.Drawing.Color.White;
+
+            if (quad.addResult.ToString() == "NaN" && quad.subtractResult.ToString() == "NaN")
+            {
+                practice_correctans_1.Text = "No solutions (ns)";
+                practice_correctans_1.BackColor = System.Drawing.Color.Black;
+                practice_correctans_1.ForeColor = System.Drawing.Color.White;
+
+                practice_correctans_2.Text = "No solutions (ns)";
+                practice_correctans_2.BackColor = System.Drawing.Color.Black;
+                practice_correctans_2.ForeColor = System.Drawing.Color.White;
+            }
 
             practice_status.Text = "Checked";
             practice_status.ForeColor = System.Drawing.Color.Green;
@@ -280,20 +298,50 @@ namespace mathapp
                 practice_input2_status.Text = "❌";
                 practice_input2_status.ForeColor = System.Drawing.Color.Red;
             }
+
+            if (quad.addResult.ToString() == "NaN" && quad.subtractResult.ToString() == "NaN")
+            {
+                if (practice_input1.Text == "ns")
+                {
+                    practice_input1_status.Text = "✅";
+                    practice_input1_status.ForeColor = System.Drawing.Color.Green;
+                }
+                else if (practice_input2.Text == "ns") 
+                {
+                    practice_input2_status.Text = "✅";
+                    practice_input2_status.ForeColor = System.Drawing.Color.Green;
+                }
+                else
+                {
+                    practice_input1_status.Text = "❌";
+                    practice_input1_status.ForeColor = System.Drawing.Color.Red;
+                    practice_input2_status.Text = "❌";
+                    practice_input2_status.ForeColor = System.Drawing.Color.Red;
+                }
+
+                if (practice_input1.Text.ToLower() == "no solution" || practice_input1.Text.ToLower() == "no solutions")
+                {
+                    practice_input1_status.Text = "✅";
+                    practice_input1_status.ForeColor = System.Drawing.Color.Green;
+                }
+                if (practice_input2.Text.ToLower() == "no solution" || practice_input2.Text.ToLower() == "no solutions")
+                {
+                    practice_input2_status.Text = "✅";
+                    practice_input2_status.ForeColor = System.Drawing.Color.Green;
+                }
+            }
         }
 
         private Quadratic quadratic(int a, int b, int c)
         {
-            var quadsqrtpart = Math.Pow(b, 2) - 4 * a * c;
-            var quadsqrt = quadsqrtpart > 0 ? Math.Sqrt(quadsqrtpart) : -1 * Math.Sqrt(-1 * quadsqrtpart);
+            //var quadsqrtpart = Math.Pow(b, 2) - 4 * a * c;
+            //var quadsqrt = quadsqrtpart > 0 ? Math.Sqrt(quadsqrtpart) : -1 * Math.Sqrt(-1 * quadsqrtpart);
 
             // Add
-            var addx = (-b + Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a);
-            addx = (-b + quadsqrt) / (2 * a);
+            var addx = ( -b + Math.Sqrt( Math.Pow(b, 2) - (4 * a * c) ) ) / (2 * a);
 
             // Subtract
-            var subtractx = (-b - Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a);
-            subtractx = (-b - quadsqrt) / (2 * a);
+            var subtractx = ( -b - Math.Sqrt( Math.Pow(b, 2) - (4 * a * c) ) ) / (2 * a);
 
             //if (addx == 0 && subtractx == 0)
             //{
