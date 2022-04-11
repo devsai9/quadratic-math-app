@@ -62,6 +62,8 @@
             this.solve_input_a = new System.Windows.Forms.NumericUpDown();
             this.solve_input_b = new System.Windows.Forms.NumericUpDown();
             this.solve_input_c = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -83,6 +85,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.splitContainer1.Panel1.Controls.Add(this.label16);
             this.splitContainer1.Panel1.Controls.Add(this.solve_input_c);
             this.splitContainer1.Panel1.Controls.Add(this.solve_input_b);
             this.splitContainer1.Panel1.Controls.Add(this.solve_input_a);
@@ -103,6 +106,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.SkyBlue;
+            this.splitContainer1.Panel2.Controls.Add(this.label17);
             this.splitContainer1.Panel2.Controls.Add(this.label10);
             this.splitContainer1.Panel2.Controls.Add(this.practice_correctans_2);
             this.splitContainer1.Panel2.Controls.Add(this.label14);
@@ -362,7 +366,7 @@
             this.practice_gen.Name = "practice_gen";
             this.practice_gen.Size = new System.Drawing.Size(197, 33);
             this.practice_gen.TabIndex = 5;
-            this.practice_gen.Text = "Create Example";
+            this.practice_gen.Text = "Create Equation";
             this.practice_gen.UseVisualStyleBackColor = false;
             this.practice_gen.Click += new System.EventHandler(this.practice_gen_Click);
             // 
@@ -438,9 +442,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(28, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(249, 30);
+            this.label2.Size = new System.Drawing.Size(320, 30);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Practice Tests:";
+            this.label2.Text = "Practice Questions:";
             // 
             // label15
             // 
@@ -516,6 +520,24 @@
             this.solve_input_c.Click += new System.EventHandler(this.solve_input_c_Click);
             this.solve_input_c.KeyUp += new System.Windows.Forms.KeyEventHandler(this.solve_input_TextChanged);
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 664);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(307, 13);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "The left side of this app is to be used like a quadratic calculator.";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(276, 664);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(295, 13);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "The right side of this app is to be used like a practice section.";
+            // 
             // app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -573,6 +595,8 @@
         private System.Windows.Forms.NumericUpDown solve_input_c;
         private System.Windows.Forms.NumericUpDown solve_input_b;
         private System.Windows.Forms.NumericUpDown solve_input_a;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
 
