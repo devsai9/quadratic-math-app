@@ -65,6 +65,7 @@
             this.practice_input1 = new System.Windows.Forms.TextBox();
             this.practice_eqdisplay = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -107,6 +108,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.SkyBlue;
+            this.splitContainer1.Panel2.Controls.Add(this.label18);
             this.splitContainer1.Panel2.Controls.Add(this.label17);
             this.splitContainer1.Panel2.Controls.Add(this.label10);
             this.splitContainer1.Panel2.Controls.Add(this.practice_correctans_2);
@@ -347,10 +349,10 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(28, 232);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(511, 19);
+            this.label10.Size = new System.Drawing.Size(542, 19);
             this.label10.TabIndex = 9;
-            this.label10.Text = "If there are no solutions, enter \"no solutions\" (all lowercase) in both textboxes" +
-    "";
+            this.label10.Text = "If there are no solutions, enter \"                           \" (all lowercase) in" +
+    " both textboxes";
             // 
             // practice_correctans_2
             // 
@@ -541,6 +543,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Practice Questions:";
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Italic);
+            this.label18.Location = new System.Drawing.Point(240, 230);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 23);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "no solutions";
+            // 
             // app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -604,6 +616,7 @@
         private System.Windows.Forms.NumericUpDown solve_input_a;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
     }
 }
 
