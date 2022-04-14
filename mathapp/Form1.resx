@@ -117,4 +117,84 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAMMOAADDDgAAAAAAAAAA
+        AADrzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686G/+3P
+        hv/GrXD/wKds/+3Phv/rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vN
+        hv/s0pD/892q/8/BoP/Iu5r/8tyn/+zRjf/rzYb/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzoj/8t6u//v15v//////2NjX/9HR0P////3/+vPh//Dbp//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/68+J//Tlvv/+/fn//Pju//foxf/OvJP/x7eP//fpxv/8+O///vv2//Phtf/rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOhv/z4rf//v36//nw2f/u1Zj/7c+H/8mvcv/Dqm7/7c+H/+7Vmf/58dv//vv2//Hd
+        rf/rzYb/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzYb/79if//368v/68t7/7dKS/+vNhf/t0Ij/yLBz/8KqcP/t0Ij/682F/+3T
+        k//68+D//Pfs/+7VmP/rzob/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+zPiv/47tb//frz/+/Yn//rzYX/686H/+3QiP/Hr3L/walv/+3Q
+        iP/rzof/682F/+/Zof/9+vT/9urK/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzYX/8Nql//78+f/158X/686G/+vOh//rzof/7dCI/8ev
+        cv/BqW//7dCI/+vOh//rzof/686H//bpyP/9+vP/79ec/+vNhv/rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//3687//fv0/+7Wm//rzYb/686H/+vO
+        h//t0Ij/yK9z/8KqcP/t0Ij/686H/+vOh//rzYb/79ed//379f/15sL/686G/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzob/7dOU//z47//579j/68+J/+vO
+        h//rzof/686H/+3QiP/JsHP/w6tw/+3QiP/rzof/686H/+vOh//rz4r/+fDb//v15v/s0Y7/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vNhf/x3av///78//Pi
+        uf/rzYX/686H/+vOh//rzof/7dCI/8iwc//CqnD/7dCI/+vOh//rzof/686H/+vNhf/05Lz//vz4/+/Y
+        oP/rzYX/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/682G//Xn
+        xP/+/fv/8Nmj/+vNhf/rzof/686H/+vOh//t0Ij/x69z/8Gqb//t0Ij/686H/+vOh//rzof/682F//Da
+        pf/+/fr/8+K3/+vNhf/rzof/686H/+vOh//rzof/686H/+vOh//sz4j/7M6H/+zOh//szof/7M+H/+zO
+        h//sz4n/+fDZ//368v/u1Jb/686H/+zPh//sz4f/7M+H/+3Qif/Ir3P/wapv/+3Qif/sz4f/7M+H/+zP
+        h//rzob/7tWY//379P/3683/686H/+zPh//sz4f/7M6H/+zOh//szof/7M+I/97DgP/gxIH/4MSB/+DE
+        gf/fxID/38SA/+HHh//v6t3/7+vf/+HHiP/fxID/38SA/+DEgf/gxIH/4caC/7ylbP+2n2n/4saC/+DE
+        gf/gxIH/38SA/9/EgP/hyIr/8Ozj/+3l0v/gxYP/38SA/9/EgP/gxIH/4MSB/+DEgf/ewn//q5Vi/7Gb
+        Zf+xm2b/sJpl/6+ZZP+vmWT/sp5v/7+9uf+8t6r/sJxq/6+ZZP+wmmX/sZtm/7GbZv+ym2b/jHtQ/4d2
+        Tf+znGb/sZtm/7CaZf+vmWT/r5lk/7GdbP++u7T/vbmv/7CcbP+vmWT/sJpl/7GbZv+xm2b/sJpl/6eS
+        YP/ozIX/6cyG/+nMhv/pzIb/6MyF/+jMhf/r0pT/+vjw//bs1P/pzIb/6MyF/+jMhf/pzIb/6cyG/+rO
+        h//GrnL/wKlu/+rOh//pzIb/6cyG/+jMhf/ozIX/6c2I//fu2v/69uz/6tCR/+jMhf/ozIb/6cyG/+nM
+        hv/pzIb/6MyF/+vOh//rzof/686H/+vOh//rzof/682G/+7Wm//+/Pf/9+vO/+vOhv/rzof/686H/+vO
+        h//rzof/7dCI/8ivc//Cqm//7dCI/+vOh//rzof/686H/+vOh//rzof/9+3S//379f/u1Zj/686G/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzYX/79ig//79+v/26Mb/682G/+vO
+        h//rzof/686H/+vOh//t0Ij/x69y/8Gpb//t0Ij/686H/+vOh//rzof/686H/+vNhv/26Mf//v36/+/Y
+        oP/rzYX/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vNhf/w26f///78//Tk
+        vv/rzYX/686H/+vOh//rzof/686H/+3QiP/Hr3P/wapv/+3QiP/rzof/686H/+vOh//rzof/682F//Tk
+        vf///v3/8dyo/+vNhf/rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/682F//He
+        rf///v7/8+G2/+vNhf/rzof/686H/+vOh//rzof/7dCI/8iwc//CqnD/7dCI/+vOh//rzof/686H/+vO
+        h//rzYX/8uCy/////v/y37L/682F/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzYX/8+G1/////v/y3q//682F/+vOh//rzof/686H/+vOh//t0Ij/ybBz/8OrcP/t0Ij/686H/+vO
+        h//rzof/686H/+vNhf/x3Kn///79//TkvP/rzYX/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vNhf/05Lz///79//HbqP/rzYX/686H/+vOh//rzof/686H/+3QiP/Ir3P/wqpw/+3Q
+        iP/rzof/686H/+vOh//rzof/682F/+/YoP/+/fr/9ujH/+vNhv/rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/682F//XnxP/+/fv/79mh/+vNhf/rzof/686H/+vOh//rzof/7dCI/8ev
+        cv/BqW//7dCI/+vOh//rzof/686H/+vOh//rzob/7tWZ//379f/37NH/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOhv/rzob/9+rM//78+P/u1pz/682G/+vOh//rzof/686H/+vO
+        h//t0Ij/x69y/8Gpb//t0Ij/686H/+vOh//rzof/686H/+vOhv/t05L//Pjv//nw2//rz4n/682F/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rz4n/7dOU/+zPiv/47dT//fr0/+7Ulv/rzob/686H/+vO
+        h//rzof/686H/+3QiP/Ir3P/wqpw/+3QiP/rzof/686H/+vOh//rzof/686H/+zQjf/79ef/+/Tk/+zR
+        j//v15z/7NGO/+vOh//rzof/686H/+vOh//rzof/682G/+/Yn//89+z/9OO7//nw2//8+O3/8Nun//fr
+        zv/v2J//686G/+vOh//rzof/7dCI/8mwc//Dq3D/7dCI/+vOh//rzof/686G/+3TlP/36sz/8d2r//nx
+        3f/89+z/8+K4//369P/y37L/682F/+vOh//rzof/686H/+vOh//rzob/7dSU//v26f/9+vT//fry//36
+        8v/79ej//v35//Hcqf/rzYX/686H/+vOh//t0Ij/yLBz/8KqcP/t0Ij/686H/+vOh//rzob/7tWZ//z5
+        8P/9+fD//Pfs//79+f/9+vL//fnx/+/Xnf/rzob/686H/+vOh//rzof/686H/+vOh//rzYb/8t6v//79
+        +v/////////////+/P/15cD/68+J/+vOh//rzof/686H/+3QiP/Hr3P/wapv/+3QiP/rzof/686H/+vO
+        h//rzof/8d2t//379f///////////////v/05L7/686G/+vOh//rzof/686H/+vOh//rzof/686H/+vO
+        h//sz4r/9+zQ//////////7/9urL/+zPi//rzob/686H/+vOh//rzof/7dCI/8evcv/BqW//7dCI/+vO
+        h//rzof/686H/+vOh//rzob/8uC0//78+P//////+vPi/+3SkP/rzob/686H/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOhv/u1Zn/+/Xm//ju1P/s0Y//686G/+vOh//rzof/686H/+vOh//t0Ij/yK9z/8Kq
+        b//t0Ij/686H/+vOh//rzof/686H/+vOh//rzof/9OO6//z36v/x3Kn/682F/+vOh//rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//t05P/7NGO/+vOhv/rzof/686H/+vOh//rzof/686H/+3Q
+        iP/IsHP/wqpw/+3QiP/rzof/686H/+vOh//rzof/686H/+vOh//rz4j/7dKR/+vOiP/rzof/686H/+vO
+        h//rzof/686H/+vOh//rzof/686H/+vOh//rzof/686H/+vOhv/rzof/686H/+vOh//rzof/686H/+vO
+        h//rzof/7c+I/8+1d//KsXT/7c+I/+vOh//rzof/686H/+vOh//rzof/686H/+vOh//rzob/686H/+vO
+        h//rzof/686H/+vOh//rzof/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
 </root>

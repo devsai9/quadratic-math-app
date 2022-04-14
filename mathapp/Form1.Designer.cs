@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(app));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label16 = new System.Windows.Forms.Label();
+            this.solve_input_c = new System.Windows.Forms.NumericUpDown();
+            this.solve_input_b = new System.Windows.Forms.NumericUpDown();
+            this.solve_input_a = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
             this.solve_header = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -40,6 +46,7 @@
             this.solve_output_1 = new System.Windows.Forms.Label();
             this.solve_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.practice_correctans_2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -58,19 +65,13 @@
             this.practice_input1 = new System.Windows.Forms.TextBox();
             this.practice_eqdisplay = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.solve_input_a = new System.Windows.Forms.NumericUpDown();
-            this.solve_input_b = new System.Windows.Forms.NumericUpDown();
-            this.solve_input_c = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.solve_input_a)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.solve_input_b)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.solve_input_c)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solve_input_b)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solve_input_a)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -129,6 +130,90 @@
             this.splitContainer1.SplitterDistance = 540;
             this.splitContainer1.TabIndex = 0;
             this.splitContainer1.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label16.Location = new System.Drawing.Point(6, 664);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(410, 17);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "The left side of this app is to be used like a quadratic calculator.";
+            // 
+            // solve_input_c
+            // 
+            this.solve_input_c.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.solve_input_c.Location = new System.Drawing.Point(54, 197);
+            this.solve_input_c.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.solve_input_c.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            -2147483648});
+            this.solve_input_c.Name = "solve_input_c";
+            this.solve_input_c.Size = new System.Drawing.Size(106, 20);
+            this.solve_input_c.TabIndex = 3;
+            this.solve_input_c.ValueChanged += new System.EventHandler(this.solve_input_TextChanged);
+            this.solve_input_c.Click += new System.EventHandler(this.solve_input_c_Click);
+            this.solve_input_c.KeyUp += new System.Windows.Forms.KeyEventHandler(this.solve_input_TextChanged);
+            // 
+            // solve_input_b
+            // 
+            this.solve_input_b.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.solve_input_b.Location = new System.Drawing.Point(54, 146);
+            this.solve_input_b.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.solve_input_b.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            -2147483648});
+            this.solve_input_b.Name = "solve_input_b";
+            this.solve_input_b.Size = new System.Drawing.Size(106, 20);
+            this.solve_input_b.TabIndex = 2;
+            this.solve_input_b.ValueChanged += new System.EventHandler(this.solve_input_TextChanged);
+            this.solve_input_b.Click += new System.EventHandler(this.solve_input_c_Click);
+            this.solve_input_b.KeyUp += new System.Windows.Forms.KeyEventHandler(this.solve_input_TextChanged);
+            // 
+            // solve_input_a
+            // 
+            this.solve_input_a.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.solve_input_a.Location = new System.Drawing.Point(54, 97);
+            this.solve_input_a.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.solve_input_a.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            -2147483648});
+            this.solve_input_a.Name = "solve_input_a";
+            this.solve_input_a.Size = new System.Drawing.Size(106, 20);
+            this.solve_input_a.TabIndex = 1;
+            this.solve_input_a.ValueChanged += new System.EventHandler(this.solve_input_TextChanged);
+            this.solve_input_a.Click += new System.EventHandler(this.solve_input_c_Click);
+            this.solve_input_a.KeyUp += new System.Windows.Forms.KeyEventHandler(this.solve_input_TextChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Bradley Hand ITC", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label15.Location = new System.Drawing.Point(21, 247);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(202, 25);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Generated Equation:";
             // 
             // solve_header
             // 
@@ -244,6 +329,16 @@
             this.label1.Size = new System.Drawing.Size(329, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quadratic Equation:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label17.Location = new System.Drawing.Point(181, 664);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(394, 17);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "The right side of this app is to be used like a practice section.";
             // 
             // label10
             // 
@@ -446,104 +541,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Practice Questions:";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Bradley Hand ITC", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(21, 247);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(202, 25);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Generated Equation:";
-            // 
-            // solve_input_a
-            // 
-            this.solve_input_a.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.solve_input_a.Location = new System.Drawing.Point(54, 97);
-            this.solve_input_a.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.solve_input_a.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            -2147483648});
-            this.solve_input_a.Name = "solve_input_a";
-            this.solve_input_a.Size = new System.Drawing.Size(106, 20);
-            this.solve_input_a.TabIndex = 1;
-            this.solve_input_a.ValueChanged += new System.EventHandler(this.solve_input_TextChanged);
-            this.solve_input_a.Click += new System.EventHandler(this.solve_input_c_Click);
-            this.solve_input_a.KeyUp += new System.Windows.Forms.KeyEventHandler(this.solve_input_TextChanged);
-            // 
-            // solve_input_b
-            // 
-            this.solve_input_b.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.solve_input_b.Location = new System.Drawing.Point(54, 146);
-            this.solve_input_b.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.solve_input_b.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            -2147483648});
-            this.solve_input_b.Name = "solve_input_b";
-            this.solve_input_b.Size = new System.Drawing.Size(106, 20);
-            this.solve_input_b.TabIndex = 2;
-            this.solve_input_b.ValueChanged += new System.EventHandler(this.solve_input_TextChanged);
-            this.solve_input_b.Click += new System.EventHandler(this.solve_input_c_Click);
-            this.solve_input_b.KeyUp += new System.Windows.Forms.KeyEventHandler(this.solve_input_TextChanged);
-            // 
-            // solve_input_c
-            // 
-            this.solve_input_c.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.solve_input_c.Location = new System.Drawing.Point(54, 197);
-            this.solve_input_c.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.solve_input_c.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            -2147483648});
-            this.solve_input_c.Name = "solve_input_c";
-            this.solve_input_c.Size = new System.Drawing.Size(106, 20);
-            this.solve_input_c.TabIndex = 3;
-            this.solve_input_c.ValueChanged += new System.EventHandler(this.solve_input_TextChanged);
-            this.solve_input_c.Click += new System.EventHandler(this.solve_input_c_Click);
-            this.solve_input_c.KeyUp += new System.Windows.Forms.KeyEventHandler(this.solve_input_TextChanged);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 664);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(307, 13);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "The left side of this app is to be used like a quadratic calculator.";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(276, 664);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(295, 13);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "The right side of this app is to be used like a practice section.";
-            // 
             // app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1120, 687);
             this.Controls.Add(this.splitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "app";
             this.Text = "Quadratics Math App";
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -552,9 +559,9 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.solve_input_a)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.solve_input_b)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.solve_input_c)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solve_input_b)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solve_input_a)).EndInit();
             this.ResumeLayout(false);
 
         }
